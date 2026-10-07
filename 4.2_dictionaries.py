@@ -23,10 +23,11 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My object, my five fields, and why those:
+# 1. In:Information about a person: name, age, occupation, city, and salary.
+# 2. Process:The program stores the five pieces of information in a dictionary.
+# 3. Out:The program displays the information stored in the dictionary.
+# 4. My object, my five fields, and why those:My object is a person. My five fields are name, age, occupation, city, and salary.
+# I chose them because they describe basic personal and work information.
 
 
 # Your code below
