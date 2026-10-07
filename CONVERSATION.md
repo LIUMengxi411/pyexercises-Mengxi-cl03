@@ -104,3 +104,25 @@ clean = sentence.strip()  # TODO: what is the value of clean?
 ```
 
 Question: after running the code above, is the value of sentence still "  hello  " or has it become "hello"?
+
+---
+## 2026-10-07 20:26, in .
+
+**Me:** I used strip(), lower(), upper(), and swapcase() in Exercise 2.1. Why does strip() remove the spaces at both ends, but lower(), upper(), and swapcase() keep the spaces? Please explain it using beginner-friendly Python.
+
+**Tutor:**
+
+String methods that change the case (lower, upper, swapcase) only affect letters.
+Whitespace characters (spaces, tabs, newlines) are not letters, so they stay unchanged.
+
+Pattern on toy data:
+
+```python
+text = "  PyThOn 123! "
+cleaned = text.strip()          # removes spaces at both ends
+lowered = cleaned.lower()       # changes letters to lower case
+uppered = cleaned.upper()       # changes letters to upper case
+swapped = cleaned.swapcase()    # swaps upper to lower and vice-versa
+```
+
+Question: Which string method only removes whitespace, and which methods only change the case of letters?
