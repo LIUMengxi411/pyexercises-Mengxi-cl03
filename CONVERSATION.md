@@ -61,3 +61,46 @@ names.append("beta")
 names.append("gamma")
 ```
 What function adds a single item to a list?
+
+---
+## 2026-10-07 16:30, in .
+
+**Me:** What is the difference between strip(), upper(), lower(), and title() in Python strings? Please explain with a simple example.
+
+**Tutor:**
+
+String case and whitespace helpers.
+
+`strip()` removes leading and trailing whitespace.
+`upper()` converts every character to uppercase.
+`lower()` converts every character to lowercase.
+`title()` capitalizes the first letter of every word.
+
+Pattern:
+
+```python
+text = "  marketing data  "
+
+print(text.strip())   # TODO: what does this print?
+print(text.upper())   # TODO: what does this print?
+print(text.lower())   # TODO: what does this print?
+print(text.title())   # TODO: what does this print?
+```
+
+Which function changes the string in-place instead of returning a new string?
+
+---
+## 2026-10-07 16:31, in .
+
+**Me:** Why do I need to save sentence.strip() in a new variable? Does strip() change the original sentence?
+
+**Tutor:**
+
+The concept: strings in Python are immutable, so methods like strip() return a new string instead of changing the original.
+
+```python
+sentence = "  hello  "
+clean = sentence.strip()  # TODO: what is the value of clean?
+```
+
+Question: after running the code above, is the value of sentence still "  hello  " or has it become "hello"?

@@ -31,3 +31,48 @@ DELIVERABLE
 
 
 # Your code below
+# 1. What goes in?
+
+# A sentence entered by the user.
+
+# 2. What happens to it?
+
+# The program applies four different string transformations to the sentence.
+
+# 3. What comes out?
+
+# Four different versions of the user's sentence.
+
+# 4. My four transformations:
+
+# strip() removes spaces from the beginning and end, which is useful for cleaning user input.
+
+# upper() changes all letters to uppercase, which is useful for emphasis.
+
+# lower() changes all letters to lowercase, which is useful for standardizing text.
+
+# title() capitalizes the first letter of each word, which is useful for titles or names.
+
+
+sentence = input("Enter a sentence: ")
+
+stripped_sentence = sentence.strip()
+uppercase_sentence = sentence.upper()
+lowercase_sentence = sentence.lower()
+title_sentence = sentence.title()
+
+print("Stripped:", stripped_sentence)
+print("Uppercase:", uppercase_sentence)
+print("Lowercase:", lowercase_sentence)
+print("Title:", title_sentence)
+
+
+# Test results:
+
+# strip(): The result was what I expected because the spaces at both ends were removed.
+
+# upper(): The result was what I expected because all letters became uppercase.
+
+# lower(): The result was what I expected because all letters became lowercase.
+
+# title(): The result was what I expected because the first letter of each word became uppercase.
