@@ -126,3 +126,28 @@ swapped = cleaned.swapcase()    # swaps upper to lower and vice-versa
 ```
 
 Question: Which string method only removes whitespace, and which methods only change the case of letters?
+
+---
+## 2026-10-07 20:54, in .
+
+**Me:** Why do I need to use range(1, N + 1) instead of range(1, N) if I want to include N? Please explain it using basic syntax suitable for beginners.
+
+**Tutor:**
+
+The concept is the behaviour of the `range()` function in Python.
+
+`range(start, stop)` generates numbers from `start` up to, but not including, `stop`.
+To include the number N, you set `stop` to N + 1.
+
+Pattern:
+```python
+# TODO: decide how many rows you want
+N = 5
+
+# TODO: generate numbers 1 to 5 (inclusive)
+numbers = list(range(1, N + 1))
+
+print(numbers)  # Expected: [1, 2, 3, 4, 5]
+```
+
+Question: What is the value of `stop` in `range(1, 11)`?
