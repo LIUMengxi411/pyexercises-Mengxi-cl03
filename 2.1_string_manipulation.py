@@ -24,55 +24,40 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
+# 1. In:A sentence entered by the user.
 # 2. Process:
-# 3. Out:
+# The program uses four string methods to transform the sentence:strip(), lower(), upper(), and swapcase().
+# 3. Out:Four different versions of the user's sentence are displayed.
 # 4. My four transformations, and when each is useful:
+#strip(): removes extra spaces at the beginning and end of text.
+#lower(): makes all letters lowercase, useful for comparing text.
+#upper(): makes all letters uppercase, useful for headings or emphasis.
+#swapcase(): changes uppercase letters to lowercase and lowercase letters touppercase, useful for seeing how letter cases change.
 
 
 # Your code below
-# 1. What goes in?
+# Ask the user to enter a sentence.
 
-# A sentence entered by the user.
+user_input = input("Enter a sentence: ")
 
-# 2. What happens to it?
+stripped_text = user_input.strip()
 
-# The program applies four different string transformations to the sentence.
+print("Stripped:", stripped_text)
 
-# 3. What comes out?
+# Change all letters to lowercase.
 
-# Four different versions of the user's sentence.
+lower_text = user_input.lower()
 
-# 4. My four transformations:
+print("Lowercase:", lower_text)
 
-# strip() removes spaces from the beginning and end, which is useful for cleaning user input.
+# Change all letters to uppercase.
 
-# upper() changes all letters to uppercase, which is useful for emphasis.
+upper_text = user_input.upper()
 
-# lower() changes all letters to lowercase, which is useful for standardizing text.
+print("Uppercase:", upper_text)
 
-# title() capitalizes the first letter of each word, which is useful for titles or names.
+# Change uppercase letters to lowercase and lowercase letters to uppercase.
 
+swapped_text = user_input.swapcase()
 
-sentence = input("Enter a sentence: ")
-
-stripped_sentence = sentence.strip()
-uppercase_sentence = sentence.upper()
-lowercase_sentence = sentence.lower()
-title_sentence = sentence.title()
-
-print("Stripped:", stripped_sentence)
-print("Uppercase:", uppercase_sentence)
-print("Lowercase:", lowercase_sentence)
-print("Title:", title_sentence)
-
-
-# Test results:
-
-# strip(): The result was what I expected because the spaces at both ends were removed.
-
-# upper(): The result was what I expected because all letters became uppercase.
-
-# lower(): The result was what I expected because all letters became lowercase.
-
-# title(): The result was what I expected because the first letter of each word became uppercase.
+print("Swapcase:", swapped_text)
