@@ -26,10 +26,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. What my list is about, and what I computed from it:
+# 1. In:Four numbers: 2, 3, 4, and 5.
+# 2. Process:I put the four numbers into a list and calculate the average of the numbers.
+# 3. Out:The program displays the list and the average of the numbers.
+# 4. What my list is about, and what I computed from it:My list contains four numbers, and I computed their average.
 
 
 # Your code below
