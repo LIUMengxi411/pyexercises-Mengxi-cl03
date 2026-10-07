@@ -61,3 +61,35 @@ print("Uppercase:", upper_text)
 swapped_text = user_input.swapcase()
 
 print("Swapcase:", swapped_text)
+
+## CHECK IT YOURSELF
+
+# Test input: "  hello World  "
+
+#
+
+# Expected results:
+
+# Stripped: hello World
+
+# Yes, this is what I expected because strip() removed the spaces at both ends.
+
+#
+
+# Lowercase:   hello world
+
+# Yes, this is what I expected because lower() changed "W" to "w".
+
+#
+
+# Uppercase:   HELLO WORLD
+
+# Yes, this is what I expected because upper() changed all letters to uppercase.
+
+#
+
+# Swapcase:   HELLO wORLD
+
+# Yes, this is what I expected because swapcase() changed lowercase letters
+
+# to uppercase and uppercase letters to lowercase.
