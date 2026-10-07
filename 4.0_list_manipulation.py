@@ -59,4 +59,3 @@ print(list_of_numbers)
 
 print("The list of numbers after removing the last item from the list")
 print(list_of_numbers)
-

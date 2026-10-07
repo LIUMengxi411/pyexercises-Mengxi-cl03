@@ -57,6 +57,7 @@ print("Descending order:", descending_list)
 # Display the original list again to check that it has not changed.
 print("Original list at the end:", my_list)
 
+
 # CHECK IT YOURSELF
 # My original list was [4, 2, 5, 3].
 # The program displayed four different orders.
