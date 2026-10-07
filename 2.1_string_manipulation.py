@@ -93,3 +93,4 @@ print("Swapcase:", swapped_text)
 # Yes, this is what I expected because swapcase() changed lowercase letters
 
 # to uppercase and uppercase letters to lowercase.
+
