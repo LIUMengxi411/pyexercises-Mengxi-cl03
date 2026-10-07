@@ -24,11 +24,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. What happens when the second number is zero, and why:
-
+# 1. In:Two numbers entered by the user
+# 2. Process:Calculate their sum, difference, product, and division
+# 3. Out:Display the results of the four calculations
+# 4. What happens when the second number is zero, and why: The program does not perform division because division by zero is undefined
 
 # Your code below
 number_1 = float(input("Enter the first number:"))
