@@ -207,3 +207,104 @@ person = {'name': 'John Joe', 'age': 30}
 - values are the strings 'John Joe' and the integer 30
 
 Question: In the pair 'city': 'Paris', which part is the key and which part is the value?
+
+---
+## 2026-10-07 21:26, in .
+
+**Me:** Why do we use range(len(names)) in a for loop? Please explain what range() and len() do using basic syntax suitable for beginners.
+
+**Tutor:**
+
+Concept: Using range(len(...)) to loop over indices of a list.
+
+Pattern:
+```python
+names = ["alpha", "beta", "gamma"]  # TODO replace with your list
+for i in range(len(names)):          # i will be 0, 1, 2 ...
+    print(names[i])                  # TODO do something with each name
+```
+
+Question: Which two built-in functions are combined here, and what does the inner one return?
+
+---
+## 2026-10-07 21:26, in .
+
+**Me:** What is the difference between 'for name in names' and 'for position in range(len(names))'? Please explain using basic syntax suitable for beginners.
+
+**Tutor:**
+
+Concept: Iterating over a list with direct values vs iterating with indices.
+
+Pattern:
+```python
+# Direct iteration (preferred)
+names = ["alpha", "beta", "gamma"]
+for name in names:
+    print(name)  # TODO: What does this print on each loop?
+
+# Index-based iteration
+for position in range(len(names)):
+    print(names[position])  # TODO: What does this print on each loop?
+```
+
+Question: In the index-based loop, what does `names[position]` access?
+
+---
+## 2026-10-07 21:26, in .
+
+**Me:** How does len() work with a string? For example, why does len('Alice') return 5? Please explain using basic syntax suitable for beginners.
+
+**Tutor:**
+
+Concept: The `len()` function counts the number of characters in a string.
+
+Pattern:
+```python
+# TODO: Write a string and use len() to count its characters
+name = "Alice"
+character_count = len(name)
+print(character_count)  # Output: 5
+```
+
+Question: What does `len()` return when applied to the string `"Bob"`?
+
+---
+## 2026-10-07 21:30, in .
+
+**Me:** Why does a while loop need a condition that eventually becomes false? What can cause an infinite loop? Please explain using basic syntax suitable for beginners.
+
+**Tutor:**
+
+A while loop keeps running as long as its condition is True.
+
+```python
+# TODO: change the value of 'count' so the loop stops
+count = 0
+while count < 5:
+    print("Looping...")
+    count = count + 1
+```
+
+What happens if you forget to change `count` inside the loop?
+
+---
+## 2026-10-07 21:30, in .
+
+**Me:** How does 'while answer != "no" and i < 5' give my loop two different ways to stop? Please explain using basic syntax suitable for beginners.
+
+**Tutor:**
+
+A while loop keeps running as long as its condition is True.
+The condition can be a combination of checks joined by **and**.
+
+```python
+answer = "yes"   # start value
+i = 0            # counter
+
+while answer != "no" and i < 5:
+    print(f"Loop {i}: answer is '{answer}'")
+    answer = input("Continue? (yes/no) ")
+    i += 1
+```
+
+Question: Which two separate tests decide when the loop stops?

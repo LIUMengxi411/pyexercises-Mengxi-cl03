@@ -28,15 +28,41 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In:The user's answer to the question "Do you want to continue?"
+# 2. Process:The program keeps asking the question until the user enters "no" or reaches 5 attempts.
+# 3. Out:The program displays a message when the loop ends and shows the number of attempts.
 # 4. My stop condition, my attempt limit, my summary:
+# The stop condition is when the user enters "no".
+# The maximum number of attempts is 5.
+# The summary shows how many attempts the user made and why the loop stopped.
 
-i=0
-while i < 5:
-    print("This is attempt number", i+1)
-    i = i +1
-print("This is the end of the loop. The maximum number of attempts has been reached.")
+
+# Your code below
 # Your code below
 
+i = 0
+answer = ""
+
+# Keep asking until the user says "no" or reaches 5 attempts.
+while answer != "no" and i < 5:
+    answer = input("Do you want to continue? ")
+    answer = answer.strip().lower()
+    i = i + 1
+
+# Check why the loop stopped.
+if answer == "no":
+    print("The loop stopped because you entered no.")
+else:
+    print("The maximum number of attempts has been reached.")
+
+# Display a summary.
+print("Total number of attempts:", i)
+
+# CHECK IT YOURSELF
+# Test 1: I entered "yes" five times.
+# The program stopped after 5 attempts, as expected.
+#
+# Test 2: I entered "   NO   " with capitals and extra spaces.
+# The program recognized it as "no" and stopped, as expected.
+#
+# The summary correctly displayed the total number of attempts.
