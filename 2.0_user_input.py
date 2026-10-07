@@ -26,10 +26,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My two fields, and what I would do with them:
+# 1. In:name and the ag of the user
+# 2. Process:joined the name and the age in the same statement
+# 3. Out:a sentence with the name and user that we got from the user
+# 4. My two fields, and what I would do with them:the name is a personal
 
 
 # Your code below
