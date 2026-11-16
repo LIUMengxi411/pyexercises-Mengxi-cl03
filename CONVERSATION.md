@@ -628,3 +628,28 @@ formatted = format(person_a, "03b")  # TODO: what is the output?
 ```
 
 What does the `0` in `"03b"` control?
+
+---
+## 2026-11-16 14:10, in .
+
+**Me:** What is the difference between `ValueError` and `ZeroDivisionError` in Python? Why do we use two separate `except` statements?
+
+**Tutor:**
+
+Concept: Distinguishing built-in exception types by their cause.
+
+A `ValueError` is raised when an operation receives an argument of the right type but an inappropriate value (e.g., `int("hello")`).
+A `ZeroDivisionError` is raised when you try to divide a number by zero.
+
+Pattern:
+```python
+try:
+    # TODO: replace with your own risky line
+    result = 10 / int("2")   # toy example
+except ValueError:
+    print("Please give me a valid integer.")
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+```
+
+Question: Which exception will be triggered if the string passed to `int()` is `"0"`?
