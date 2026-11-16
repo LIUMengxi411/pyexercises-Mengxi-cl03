@@ -653,3 +653,24 @@ except ZeroDivisionError:
 ```
 
 Question: Which exception will be triggered if the string passed to `int()` is `"0"`?
+
+---
+## 2026-11-16 14:27, in .
+
+**Me:** What is the difference between `ValueError` and `ZeroDivisionError` in Python? Why do we use two separate `except` statements?
+
+**Tutor:**
+
+Concept: These are two different built-in exception types used to handle two distinct kinds of errors.
+
+ValueError
+• Raised when a function receives an argument of the right type but an inappropriate value.
+• Example: int("hello") → ValueError because "hello" is not a valid integer.
+
+ZeroDivisionError
+• Raised when you try to divide a number by zero.
+• Example: 10 / 0 → ZeroDivisionError.
+
+Separate except blocks let you give different recovery actions for each error.
+
+Question: Which built-in function raises ValueError when the string cannot be converted to an integer?
