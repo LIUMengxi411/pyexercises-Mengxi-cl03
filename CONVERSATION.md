@@ -499,3 +499,64 @@ print("Worst decision:", worst_decision["name"])
 ```
 
 Which argument tells max() and min() which field to compare?
+
+---
+## 2026-11-16 12:52, in .
+
+**Me:** Why do we use return instead of print inside a function?
+
+**Tutor:**
+
+Using `return` in a function makes its result available to the caller, while `print` only shows text on the screen.
+
+Pattern:
+```python
+def calculate_profit(cost, revenue):
+    # TODO: compute profit and return it
+    profit = revenue - cost
+    # TODO: replace print with return
+    print(profit)
+```
+
+What keyword lets the caller use the value computed by the function?
+
+---
+## 2026-11-16 12:52, in .
+
+**Me:** What happens if I forget to write return in a function?
+
+**Tutor:**
+
+A function without `return` returns `None` automatically.
+
+Pattern:
+```python
+def get_value(x):
+    # TODO: compute something and return it
+    result = x * 2
+    # TODO: add return here
+```
+
+What built-in value does Python give back when a function has no `return`?
+
+---
+## 2026-11-16 12:53, in .
+
+**Me:** Can one function call another function in Python?
+
+**Tutor:**
+
+Yes, one function can call another function in Python.
+
+Pattern:
+```python
+def add_two(a, b):
+    # TODO: return the sum of a and b
+    return a + b
+
+# --- cut by the tutor: One function per answer. The next one is yours to write ---
+```
+
+Which function is called inside `multiply_by_three`?
+
+*Cut by the tutor: One function per answer. The next one is yours to write.*

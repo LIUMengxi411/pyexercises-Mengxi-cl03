@@ -28,62 +28,70 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
+
 # 1. In:
+# A list of student scores.
+
 # 2. Process, function by function:
+# Function 1 calculates the total score.
+# Function 2 finds the highest score.
+# Function 3 calculates the average score.
+# Function 4 combines the three results.
+
 # 3. Out:
+# Total score, highest score, and average score.
+
 # 4. The question my fourth function answers:
+# What is the overall performance of these scores?
+# Splitting the work makes each function easier to test.
 
 
-# Your code below
-number = 4
-if number > 0:
-    print("The number is positive")
-else:
-    print("The number is negative")
+# Function 1: Calculate the total score
+def calculate_total(scores):
+    return sum(scores)
 
-number = 5
-if number > 0:
-     print("The number is positive")
-else:
-     print("The number is negative")
-     
-number = 9
-if number >0:
-    print("The number is positive")
-else:
-    print("The number is negative")
 
-def check(number):
-    if number > 0:
-        print("The number is positive")
-    else:
-            print("The number is negative")
+# Function 2: Find the highest score
+def find_highest(scores):
+    if len(scores) == 0:
+        return None
+    return max(scores)
 
-num = int(input("Enter a number:"))
-check(num)
 
-def is_positive(num):
-    return num > 0
+# Function 3: Calculate the average score
+def calculate_average(scores):
+    if len(scores) == 0:
+        return 0
+    return sum(scores) / len(scores)
 
-def is_negative(num):
-     return num < 0
 
-def is_zero(num):
-     return num == 0
+# Function 4: Combine the three functions
+def analyze_scores(scores):
+    total = calculate_total(scores)
+    highest = find_highest(scores)
+    average = calculate_average(scores)
 
-def is_even(num):
-     return num % 2 ==0
+    print("Total score:", total)
+    print("Highest score:", highest)
+    print("Average score:", average)
 
-def detailed_message(num):
-    if is_zero(num):
-        return "The number is zero."
-    elif is_positive(num):
-        return "The number is positive."
-    elif is_negative(num):
-        return "The number is negative."
-    elif is_even(num):
-        return "The number is even."
-    else:
-        return "The number is odd."
-number = 4
-print(detailed_message(number))
+
+# Test each small function separately
+scores = [70, 80, 90, 60, 100]
+
+# Test 1: Input [70, 80, 90, 60, 100]
+# Expected total: 400
+print("Test 1:", calculate_total(scores))
+
+# Test 2: Input [70, 80, 90, 60, 100]
+# Expected highest: 100
+print("Test 2:", find_highest(scores))
+
+# Test 3: Input [70, 80, 90, 60, 100]
+# Expected average: 80.0
+print("Test 3:", calculate_average(scores))
+
+# Test the fourth function
+print("Final analysis:")
+analyze_scores(scores)
+

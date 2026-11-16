@@ -26,30 +26,30 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My function name, and why return rather than print:
-
+# 1. In: A list of numbers.
+# 2. Process: Add all numbers in the list.
+# 3. Out: The total sum of the numbers.
+# 4. My function is called calculate_list_sum.
+# I use return because the result can be used again.
+# Print only shows the result on the screen.
 
 # Your code below
-num_1 = 1
-num_2 = 3
-sum = num_1 + num_2
-print("The sum of two numbers is: ", sum)
 
-num_1 = 5
-num_2 = 4
-sum = num_1 + num_2
-print("The sum of two numbers is: ", sum)
+# My list from exercise 4.0
+list_of_numbers = [10, 9, 1, 7, 8, 6, 2, 3, 4, 5]
 
-def sum(number_1, number_2):
-    sum_numbers = number_1 + number_2
-    print("The sum is : ", sum_numbers)
-    return None
-def add_numbers(num1, num2):
-    sum_result = num1 + num2
+def calculate_list_sum(numbers):
+    sum_result = 0
+    for num in numbers:
+        sum_result = sum_result + num
     return sum_result
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+print("Result 1:", calculate_list_sum(list_of_numbers))
+print("Result 2:", calculate_list_sum(list_of_numbers[:5]))
+print("Result 3:", calculate_list_sum(list_of_numbers[5:]))
+
+# Test with an empty list
+print("Empty list:", calculate_list_sum([]))
+
+# The empty list returns 0.
+# This is acceptable because there are no numbers to add.
