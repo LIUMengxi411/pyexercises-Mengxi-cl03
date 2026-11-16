@@ -597,3 +597,34 @@ with open("toy_data.txt", "r") as f:
 ```
 
 Question: Which two characters does `strip()` remove by default?
+
+---
+## 2026-11-16 14:02, in .
+
+**Me:** What is the difference between `|` and `&` in Python? Why do they give different results when working with binary numbers?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-16 14:02, in .
+
+**Me:** Why do we use `format(person_a, "03b")` in my code? What does `"03b"` mean?
+
+**Tutor:**
+
+The string `"03b"` is a format specifier for binary representation with padding.
+
+`"03b"` means:
+- `b` → format the number as binary
+- `3` → pad the result to 3 digits
+- `0` → pad with zeros on the left
+
+Example:
+```python
+person_a = 5
+formatted = format(person_a, "03b")  # TODO: what is the output?
+```
+
+What does the `0` in `"03b"` control?
